@@ -1,11 +1,688 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Nital Shah | Professional Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nital Shah | Professional Portfolio</title>
+
+<meta name="description" content="Nital Shah - Data Analytics, Business Intelligence, Generative AI, Business Analysis and Project Coordination professional based in Barrie, Ontario.">
+
+<style>
+
+:root {
+    --navy: #10243b;
+    --teal: #087f8c;
+    --light: #f1f5f9;
+    --white: #ffffff;
+    --text: #334155;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: var(--light);
+    color: var(--text);
+    line-height: 1.7;
+}
+
+nav {
+    background: var(--navy);
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 8px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #5eead4;
+}
+
+.hero {
+    background: linear-gradient(135deg, #10243b, #164e63);
+    color: white;
+    padding: 100px 8%;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: clamp(40px, 6vw, 65px);
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+.hero h2 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #99f6e4;
+}
+
+.hero p {
+    max-width: 850px;
+    margin: 20px auto;
+    color: #e2e8f0;
+}
+
+.button {
+    display: inline-block;
+    background: var(--teal);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    margin: 8px;
+    font-weight: 600;
+}
+
+.button:hover {
+    background: #065f69;
+}
+
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 65px 25px;
+    scroll-margin-top: 100px;
+}
+
+.section-title {
+    color: var(--navy);
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 4px;
+    background: var(--teal);
+    margin: 12px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 22px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 4px solid var(--teal);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card h3 {
+    color: var(--navy);
+    margin-top: 0;
+}
+
+.about {
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+.tag {
+    display: inline-block;
+    background: #e6f4f5;
+    color: #155e63;
+    padding: 5px 12px;
+    margin: 4px 2px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+.experience {
+    background: white;
+    border-left: 5px solid var(--teal);
+    padding: 25px 30px;
+    margin-bottom: 22px;
+    border-radius: 8px;
+}
+
+.experience h3 {
+    color: var(--navy);
+    margin-bottom: 4px;
+}
+
+.date {
+    color: var(--teal);
+    font-weight: 600;
+}
+
+.contact {
+    text-align: center;
+}
+
+footer {
+    background: var(--navy);
+    color: #cbd5e1;
+    padding: 25px;
+    text-align: center;
+}
+
+@media (max-width: 650px) {
+    nav {
+        justify-content: center;
+        text-align: center;
+        position: static;
+    }
+
+    nav a {
+        display: inline-block;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    section {
+        padding: 40px 18px;
+    }
+}
+
+</style>
 </head>
+
 <body>
-    <h1>Nital Shah</h1>
-    <h2>Professional Portfolio</h2>
-    <p>Data Analytics | Business Intelligence | AI & Automation | Project Coordination</p>
+
+<nav>
+    <div class="logo">NITAL SHAH</div>
+
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<header class="hero" id="home">
+
+    <h1>NITAL SHAH</h1>
+
+    <h2>Data Analytics & Business Intelligence Professional</h2>
+
+    <p>
+        Data Analytics | Business Analysis | Generative AI |
+        Project Coordination | Technical Documentation |
+        Technical Training
+    </p>
+
+    <p>
+        Combining analytical expertise, technology and business
+        understanding to deliver meaningful insights, improve
+        processes and support informed decision-making.
+    </p>
+
+    <a class="button" href="#projects">Explore My Portfolio</a>
+
+    <a class="button"
+       href="https://www.linkedin.com/in/nital-shah-0b0459350/"
+       target="_blank" rel="noopener">
+       Connect on LinkedIn
+    </a>
+
+</header>
+
+<section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about">
+
+        <p>
+            I am an analytical and technically skilled professional
+            with over eight years of experience in data analytics,
+            business intelligence, technical education, documentation
+            and process improvement.
+        </p>
+
+        <p>
+            Currently, I support telecommunications project coordination
+            at AZ3, working with project requirements, material records,
+            data reconciliation, Excel reporting and stakeholder
+            communication.
+        </p>
+
+        <p>
+            At Georgian College, I deliver practical technical
+            instruction in Big Data Analytics, Business Intelligence,
+            Data Visualization and Advanced Databases. My work
+            includes analytical projects, curriculum development,
+            technical documentation and AI-assisted content development.
+        </p>
+
+        <p>
+            My professional interests include business analysis,
+            generative AI, workflow automation, data-driven
+            decision-making and continuous process improvement.
+        </p>
+
+        <p><strong>Location:</strong> Barrie, Ontario, Canada</p>
+
+    </div>
+
+</section>
+
+<section id="skills">
+
+    <h2 class="section-title">Professional & Technical Skills</h2>
+
+    <div class="grid" id="skills-grid"></div>
+
+</section>
+
+<section id="projects">
+
+    <h2 class="section-title">Project Portfolio</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Business Intelligence</h3>
+            <p>
+                Power BI reporting, interactive dashboards,
+                KPI visualization and business insights.
+            </p>
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Power Query</span>
+        </div>
+
+        <div class="card">
+            <h3>Python Data Analytics</h3>
+            <p>
+                Data cleaning, transformation, exploratory
+                analysis and statistical visualization.
+            </p>
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+        </div>
+
+        <div class="card">
+            <h3>SQL & Database Analytics</h3>
+            <p>
+                Database querying, data extraction,
+                aggregation and analytical reporting.
+            </p>
+            <span class="tag">SQL</span>
+            <span class="tag">SQL Server</span>
+            <span class="tag">SSMS</span>
+        </div>
+
+        <div class="card">
+            <h3>Generative AI</h3>
+            <p>
+                Prompt development, AI-assisted technical
+                documentation and generated content validation.
+            </p>
+            <span class="tag">Claude</span>
+            <span class="tag">Copilot</span>
+            <span class="tag">Prompt Engineering</span>
+        </div>
+
+        <div class="card">
+            <h3>Workflow Automation</h3>
+            <p>
+                Portfolio development area focused on
+                automating repetitive business processes.
+            </p>
+            <span class="tag">Power Automate</span>
+            <span class="tag">Excel</span>
+            <span class="tag">SharePoint</span>
+        </div>
+
+        <div class="card">
+            <h3>Business & Project Analysis</h3>
+            <p>
+                Requirements validation, data reconciliation,
+                operational reporting and process improvement.
+            </p>
+            <span class="tag">Excel</span>
+            <span class="tag">Business Analysis</span>
+        </div>
+
+    </div>
+
+    <p style="text-align:center">
+        Individual project demonstrations and case studies
+        will be added as they are prepared.
+    </p>
+
+</section>
+
+<section id="experience">
+
+    <h2 class="section-title">Professional Experience</h2>
+
+    <div class="experience">
+
+        <h3>Project Coordinator</h3>
+
+        <strong>AZ3 – Azimuth Three Enterprises Inc.</strong>
+
+        <p class="date">September 2026 – Present</p>
+
+        <ul>
+            <li>Support telecommunications construction project coordination.</li>
+            <li>Validate and reconcile material records across Excel workbooks.</li>
+            <li>Consolidate project information for operational reporting.</li>
+            <li>Coordinate material status updates and clarify project requirements.</li>
+            <li>Collaborate with project managers and stakeholders.</li>
+        </ul>
+
+    </div>
+
+    <div class="experience">
+
+        <h3>Part-Time Professor – Big Data Analytics</h3>
+
+        <strong>Georgian College | Barrie, Ontario</strong>
+
+        <p class="date">September 2018 – Present</p>
+
+        <ul>
+            <li>Deliver technical instruction in data analytics, business intelligence and advanced databases.</li>
+            <li>Develop practical projects using Python, SQL, Excel and Power BI.</li>
+            <li>Create interactive dashboards and analytical reporting examples.</li>
+            <li>Review technical content, datasets and project outputs for accuracy.</li>
+            <li>Use generative AI to develop and refine technical learning resources.</li>
+            <li>Contribute to curriculum development and continuous improvement.</li>
+        </ul>
+
+    </div>
+
+    <div class="experience">
+
+        <h3>Admin Support – Technical Documentation</h3>
+
+        <strong>Tempo Flexible Packaging | Innisfil, Ontario</strong>
+
+        <p class="date">March 2026 – June 2026</p>
+
+        <ul>
+            <li>Maintain operational documentation aligned with ISO 9001 requirements.</li>
+            <li>Manage document registers, version control and revision history.</li>
+            <li>Review and standardize SOPs and work instructions.</li>
+            <li>Use AI-assisted drafting and human review to improve documentation.</li>
+            <li>Support cross-functional collaboration and administrative operations.</li>
+        </ul>
+
+    </div>
+
+</section>
+
+<section id="education">
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Master of Computer Applications</h3>
+            <p>MCA | India</p>
+            <p>World Education Services (WES), Canada assessment.</p>
+        </div>
+
+        <div class="card">
+            <h3>Bachelor of Computer Applications</h3>
+            <p>BCA | India</p>
+            <p>World Education Services (WES), Canada assessment.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="certifications">
+
+    <h2 class="section-title">Professional Development</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Generative AI and Workplace Transformation</h3>
+            <p>LinkedIn Learning | March 2026</p>
+        </div>
+
+        <div class="card">
+            <h3>Microsoft Power Automate Essential Training</h3>
+            <p>LinkedIn Learning | April 2026</p>
+        </div>
+
+        <div class="card">
+            <h3>Project Management Foundations</h3>
+            <p>LinkedIn Learning | November 2025</p>
+        </div>
+
+        <div class="card">
+            <h3>Project Management Foundations: Communication</h3>
+            <p>LinkedIn Learning | March 2026</p>
+        </div>
+
+        <div class="card">
+            <h3>Lean Six Sigma Foundations</h3>
+            <p>LinkedIn Learning | April 2026</p>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="contact" class="contact">
+
+    <h2 class="section-title">Let's Connect</h2>
+
+    <p>
+        Open to professional opportunities in Data Analytics,
+        Business Intelligence, Business Analysis, AI & Automation,
+        Project Coordination and Technical Training.
+    </p>
+
+    <p>Barrie, Ontario, Canada</p>
+
+    <a class="button" href="mailto:shahnital84@gmail.com">
+        Email Me
+    </a>
+
+    <a class="button"
+       href="https://www.linkedin.com/in/nital-shah-0b0459350/"
+       target="_blank" rel="noopener">
+       LinkedIn Profile
+    </a>
+
+</section>
+
+<footer>
+    <p>
+        &copy; <span id="year"></span> Nital Shah |
+        Professional Portfolio
+    </p>
+</footer>
+
+<script>
+
+const skills = [
+
+    {
+        title: "Data Analytics",
+        items: [
+            "Python", "Pandas", "NumPy",
+            "Data Cleaning", "Data Transformation",
+            "Exploratory Data Analysis", "ETL"
+        ]
+    },
+
+    {
+        title: "Business Intelligence",
+        items: [
+            "Power BI", "Tableau", "DAX",
+            "Power Query", "KPI Reporting",
+            "Interactive Dashboards", "Data Modeling"
+        ]
+    },
+
+    {
+        title: "Database Management",
+        items: [
+            "SQL", "SQL Server", "SSMS",
+            "Advanced Databases", "Data Extraction"
+        ]
+    },
+
+    {
+        title: "Data Visualization",
+        items: [
+            "Matplotlib", "Seaborn",
+            "Plotly", "Streamlit"
+        ]
+    },
+
+    {
+        title: "Generative AI",
+        items: [
+            "Anthropic Claude", "Microsoft Copilot",
+            "Prompt Engineering", "AI-Assisted Programming",
+            "AI Content Development", "AI Output Validation"
+        ]
+    },
+
+    {
+        title: "Automation & Professional Development",
+        items: [
+            "Power Automate", "Excel Automation",
+            "Workflow Automation", "SharePoint"
+        ]
+    },
+
+    {
+        title: "Business Analysis",
+        items: [
+            "Requirements Analysis", "Gap Analysis",
+            "Data Validation", "Quality Assurance",
+            "Process Improvement", "Data Reconciliation"
+        ]
+    },
+
+    {
+        title: "Project Coordination",
+        items: [
+            "Project Management", "Material Tracking",
+            "Operational Reporting", "Stakeholder Communication",
+            "Cross-Functional Collaboration"
+        ]
+    },
+
+    {
+        title: "Technical Documentation",
+        items: [
+            "SOPs", "Work Instructions",
+            "ISO 9001 Documentation",
+            "Document Version Control", "Technical Writing"
+        ]
+    },
+
+    {
+        title: "Technical Training",
+        items: [
+            "Curriculum Development", "Instructional Design",
+            "Technical Content Development",
+            "Learning Management Systems", "Technical Instruction"
+        ]
+    },
+
+    {
+        title: "Programming",
+        items: [
+            "Python", "C#", ".NET"
+        ]
+    },
+
+    {
+        title: "Tools & Platforms",
+        items: [
+            "Microsoft Excel", "Microsoft 365",
+            "Visual Studio Code", "Jupyter Notebook",
+            "Microsoft Teams", "Blackboard Ultra"
+        ]
+    }
+
+];
+
+const grid = document.getElementById("skills-grid");
+
+skills.forEach(category => {
+
+    const card = document.createElement("div");
+
+    card.className = "card";
+
+    const heading = document.createElement("h3");
+
+    heading.textContent = category.title;
+
+    card.appendChild(heading);
+
+    category.items.forEach(skill => {
+
+        const tag = document.createElement("span");
+
+        tag.className = "tag";
+
+        tag.textContent = skill;
+
+        card.appendChild(tag);
+
+    });
+
+    grid.appendChild(card);
+
+});
+
+document.getElementById("year").textContent =
+    new Date().getFullYear();
+
+</script>
+
 </body>
 </html>
